@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+.text-xs {
+    // text-preset-4-medium
+    @include typography($font-family-primary, 0.75rem, 500, 120%, 5px);
+    color: $grey;
+    margin-bottom: $spacing-4;
+}
+
+.text-sm {
+    // text-preset-5-medium
+    @include typography($font-family-primary, 0.813rem, 500, 120%, 0px);
+    color: $grey;
+    margin-bottom: $spacing-4;
+}
+
+.text-medium {
+    // text-preset-3-medium
+    @include typography($font-family-primary, 0.875rem, 500, 160%, 0px);
+    color: $grey;
+    margin-bottom: $spacing-4;
+}
+
+.text-large {
+    // text-preset-2-bold
+    @include typography($font-family-primary, 0.875rem, 700, 110%, 0px);
+    color: $white;
+}
+
+.text-extra-large {
+    // text-preset-1-bold
+    @include typography($font-family-secondary, 2rem, 700, 100%, 0px);
+    margin-bottom: $spacing-4;
+}
+
+.text-extra-large-green {
+    @include typography($font-family-secondary, 2rem, 700, 100%, 0px);
+    color: $green-500;
+    margin-bottom: $spacing-4;
+}

@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.text-xs {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 5px;
+  color: #6c7289;
+  margin-bottom: 1.5rem;
+}
+
+.text-sm {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #6c7289;
+  margin-bottom: 1.5rem;
+}
+
+.text-medium {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0px;
+  color: #6c7289;
+  margin-bottom: 1.5rem;
+}
+
+.text-large {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.text-extra-large {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin-bottom: 1.5rem;
+}
+
+.text-extra-large-green {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #3d8168;
+  margin-bottom: 1.5rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 0.875rem;
+  background-color: #f2eae2;
+}
+
+/* Base styles for container */
+.container {
+  display: flex;
+  flex-direction: column; /* Stack content vertically by default (mobile-first) */
+  align-items: center; /* Center content horizontally */
+  border-radius: 0.625rem;
+  overflow: hidden;
+  margin: 1.25rem auto;
+  max-width: 375px;
+}
+
+/* Style for product image */
+.product-image img {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  -o-object-fit: cover;
+     object-fit: cover; /* Make sure the image fills the space */
+}
+
+.product-details {
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.product-details > div { /* Style the container for prices */
+  display: flex; /* Use flexbox for inline alignment */
+  align-items: center;
+  gap: 1rem; /* Vertically align prices */
+}
+
+.product-button {
+  background-color: #3d8168;
+  padding: 16px 32px;
+  width: 286px;
+  height: 50px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.product-button:hover {
+  background-color: #1a4032;
+}
+
+.product-button-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.product-original-price {
+  text-decoration: line-through;
+}
+
+/* Tablet and larger (Side-by-Side Layout) */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Arrange items side by side on tablets and larger */
+    align-items: stretch;
+    max-width: 600px;
+  }
+  .product-image {
+    max-width: 40%; /* Limit image width to 40% of the container on larger screens */
+  }
+  .product-image img {
+    border-radius: 10px 0 0 10px; /* Rounded corners on left */
+    height: 100%; /* Make the image take up all the height*/
+    -o-object-fit: cover;
+       object-fit: cover; /*prevent image from distorting*/
+  }
+  .product-details {
+    border-radius: 0 10px 10px 0; /* Rounded corners on right */
+  }
+}
+/* Desktop (Optional: further reduce image size for large screens) */
+@media (min-width: 1024px) {
+  .product-image img {
+    max-width: 300px; /* Set a smaller max-width for larger screens */
+  }
+}/*# sourceMappingURL=main.css.map */
